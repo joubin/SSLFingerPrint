@@ -5,7 +5,16 @@ Even when it's HTTPS. This small script uses a remote server to double check the
 
 ### Issues:
 
-False positives. If a domain, like Google.com is wildly distributed and might use many different SSL certificates. That means, the check done by the remote server might get a differnt certificate than the one done by your local machine. One way to fix this, is to ensure that your server is regionally close to you as most of these changes are geographically applied. 
+#### False positives
+
+If a domain, like Google.com is wildly distributed and might use many different SSL certificates. That means, the check done by the remote server might get a differnt certificate than the one done by your local machine. One way to fix this, is to ensure that your server is regionally close to you as most of these changes are geographically applied.
+ 
+#### Insecure Server
+
+> If you have a server to check against, why not just VPN?
+
+Well, personally, I don't want to run a VPN on my server and connecting to a VPN could be an over kill and difficult on networks that are slow to begin with
+
 ## Install
 
 1. Place `check.py` in your `$PATH`.
