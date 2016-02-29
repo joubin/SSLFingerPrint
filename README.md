@@ -17,6 +17,10 @@ Remote: SHA1 Fingerprint=16:ED:EA:ED:B6:02:2B:50:44:42:EE:FB:AF:B2:F6:6A:4D:CF:D
 Finger print matched. This means you're safe
 ```
 
+# Shell based check
+
+If you want to do it the old way, you can use the following two files placed under shell
+
 Place the two files in your path.
 
 How to run:
