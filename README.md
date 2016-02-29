@@ -1,3 +1,22 @@
+# SSLFingerPrint
+
+## Install
+
+1. Place `check.py` in your `$PATH`.
+2. Create an alias for it in your `.bashrc` or `.bash_profile`
+    - `alias sslcheck='python check.py '`
+
+## Run
+
+` sslcheck google.com`
+
+```
+Checking: google.com
+Local: SHA1 Fingerprint=16:ED:EA:ED:B6:02:2B:50:44:42:EE:FB:AF:B2:F6:6A:4D:CF:DD:C6
+Remote: SHA1 Fingerprint=16:ED:EA:ED:B6:02:2B:50:44:42:EE:FB:AF:B2:F6:6A:4D:CF:DD:C6
+Finger print matched. This means you're safe
+```
+
 Place the two files in your path.
 
 How to run:
@@ -10,11 +29,13 @@ OR
 
 Configure:
 
-In the sslRun.sh modify the YOURSERVER to your ssh login for any *nix based server with ssh access. 
+In the sslRun.sh modify the `YOURSERVER` to your ssh login for any *nix based server with ssh access. 
 
 eg
 	
 	admin@example.com
+	
+	
 Install in your $PATH.
 
 Mine is located at bin and looks likes
@@ -26,6 +47,7 @@ Mine is located at bin and looks likes
 ├── chmod
 ├── ssl.sh
 ├── sslRun.sh
+|__....
 </pre>
 
 Note:
