@@ -1,5 +1,11 @@
 # SSLFingerPrint
+When using open Wifis, like the ones at coffe shops, airports and outlet malls, you can't be sure that your traffic is safe. 
 
+Even when it's HTTPS. This small script uses a remote server to double check the connection.
+
+### Issues:
+
+False positives. If a domain, like Google.com is wildly distributed and might use many different SSL certificates. That means, the check done by the remote server might get a differnt certificate than the one done by your local machine. One way to fix this, is to ensure that your server is regionally close to you as most of these changes are geographically applied. 
 ## Install
 
 1. Place `check.py` in your `$PATH`.
